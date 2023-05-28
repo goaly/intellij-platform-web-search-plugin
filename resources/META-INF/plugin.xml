@@ -1,0 +1,53 @@
+<idea-plugin>
+  <id>com.goaly.web.search</id>
+  <name>网页搜索</name>
+  <version>1.0</version>
+  <vendor email="goaly@163.com" url="https://user.qzone.qq.com/452016/infocenter">harry</vendor>
+
+  <description><![CDATA[
+    <h1>网页搜索插件</h1>
+    <h2>插件介绍</h2>
+    <p>该插件能为你带来便捷的网页搜索功能</p>
+    <p>支持的搜索引擎有：</p>
+    <ul>
+        <li>必应搜索</li>
+        <li>百度搜索</li>
+        <li>搜狗搜索</li>
+    </ul>
+    <h2>使用方式</h2>
+    <p>在编辑器或控制台，选中要搜索的内容，然后右键选择要使用的搜索引擎，就可以直接打开系统默认浏览器进行便捷的网页搜索。</p>
+    <h2>作者</h2>
+    <p>harry</p>
+
+    ]]></description>
+
+  <change-notes><![CDATA[
+    <ul>
+        <li>2023-05-27 v1.0</li>
+    </ul>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <group id="com.goaly.WebSearchActionGroup" text="网页搜索" class="com.goaly.search.WebSearchActionGroup" popup="true">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+      <add-to-group group-id="ConsoleEditorPopupMenu" anchor="first"/>
+      <action id="com.goaly.WebSearchAction1" class="com.goaly.search.WebSearchAction" text="必应搜索"/>
+      <action id="com.goaly.WebSearchAction2" class="com.goaly.search.WebSearchAction" text="百度搜索"/>
+      <action id="com.goaly.WebSearchAction3" class="com.goaly.search.WebSearchAction" text="搜狗搜索"/>
+    </group>
+  </actions>
+
+</idea-plugin>
