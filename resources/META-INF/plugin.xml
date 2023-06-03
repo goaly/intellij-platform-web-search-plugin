@@ -2,7 +2,7 @@
   <id>com.goaly.web.search</id>
   <name>网页搜索</name>
   <version>1.0</version>
-  <vendor email="goaly@163.com" url="https://user.qzone.qq.com/452016/infocenter">harry</vendor>
+  <vendor email="goaly@163.com" url="https://github.com/goaly/intellij-platform-web-search-plugin.git">goaly</vendor>
 
   <description><![CDATA[
     <h1>网页搜索插件</h1>
