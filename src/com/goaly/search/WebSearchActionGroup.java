@@ -29,7 +29,6 @@ public class WebSearchActionGroup extends DefaultActionGroup {
      * @return boolean
      */
     private boolean isEnableWebSearch(@NotNull AnActionEvent e) {
-        String actionName = e.getPresentation().getText();
         // 获取当前光标
         Caret caret = e.getData(CommonDataKeys.CARET);
         if (caret == null) {

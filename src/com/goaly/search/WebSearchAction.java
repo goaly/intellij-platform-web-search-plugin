@@ -14,11 +14,11 @@ import com.intellij.util.io.URLUtil;
 public class WebSearchAction extends AnAction {
 
     @Override
-    public void actionPerformed(AnActionEvent e) {
+    public void actionPerformed(AnActionEvent event) {
 
-        String actionName = e.getPresentation().getText();
+        String actionName = event.getPresentation().getText();
         // 获取当前光标
-        Caret caret = e.getData(CommonDataKeys.CARET);
+        Caret caret = event.getData(CommonDataKeys.CARET);
         if (caret == null) {
             return;
         }
